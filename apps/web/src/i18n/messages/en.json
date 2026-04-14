@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "title": "FileSentinel Open-Source"
+  },
+  "home": {
+    "title": "Detect file types with FileSentinel",
+    "subtitle": "Upload a file and get AI-powered classification in milliseconds.",
+    "uploadLabel": "Choose a file",
+    "submit": "Analyze file",
+    "analyzing": "Analyzing...",
+    "noResult": "No results yet.",
+    "resultTitle": "Result",
+    "error": "Could not analyze file"
+  },
+  "auth": {
+    "signIn": "Sign in",
+    "signOut": "Sign out"
+  }
+}

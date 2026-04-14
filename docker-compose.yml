@@ -1,0 +1,22 @@
+services:
+  api:
+    build:
+      context: ./apps/api
+      dockerfile: Dockerfile
+    env_file:
+      - ./apps/api/.env.example
+    ports:
+      - "8000:8000"
+
+  web:
+    build:
+      context: ./apps/web
+      dockerfile: Dockerfile
+    env_file:
+      - ./apps/web/.env.example
+    environment:
+      - API_BASE_URL=http://api:8000
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
