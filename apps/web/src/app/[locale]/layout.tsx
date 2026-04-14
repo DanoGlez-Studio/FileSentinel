@@ -18,12 +18,8 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
   const messages = (await import(`@/i18n/messages/${locale}.json`)).default;
 
   return (
-    <html lang={locale || defaultLocale}>
-      <body>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          {children}
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider locale={locale || defaultLocale} messages={messages}>
+      {children}
+    </NextIntlClientProvider>
   );
 }

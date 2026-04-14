@@ -5,6 +5,9 @@ import MicrosoftEntraID from "next-auth/providers/microsoft-entra-id";
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
   trustHost: true,
+  pages: {
+    error: "/auth/error"
+  },
   providers: [
     Discord({
       clientId: process.env.DISCORD_CLIENT_ID ?? "",

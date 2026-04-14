@@ -6,14 +6,40 @@
     "title": "Detecta tipos de archivo con FileSentinel",
     "subtitle": "Sube un archivo y recibe su clasificación AI en milisegundos.",
     "uploadLabel": "Seleccionar archivo",
+    "dropHint": "Haz click o arrastra tu archivo aquí",
+    "dropActive": "Suelta el archivo para analizarlo",
+    "selectedFile": "Archivo seleccionado",
     "submit": "Analizar archivo",
     "analyzing": "Analizando...",
     "noResult": "Aun no hay resultados.",
     "resultTitle": "Resultado",
-    "error": "No fue posible analizar el archivo"
+    "error": "No fue posible analizar el archivo",
+    "detectedType": "Tipo detectado",
+    "mimeType": "MIME",
+    "confidence": "Confianza",
+    "confidenceLevel": "Nivel de confianza",
+    "elapsedTime": "Tiempo",
+    "score": "Puntuación",
+    "warnings": "Advertencias",
+    "technicalDetails": "Detalles técnicos"
   },
   "auth": {
     "signIn": "Iniciar sesion",
     "signOut": "Cerrar sesion"
+  },
+  "signInPage": {
+    "badge": "Acceso seguro",
+    "title": "Inicia sesión en FileSentinel",
+    "subtitle": "Accede para guardar tus análisis, repetir pruebas y mantener un historial ordenado.",
+    "benefitOne": "Historial de análisis en una sola vista",
+    "benefitTwo": "Flujo más rápido para pruebas repetidas",
+    "benefitThree": "Preparado para equipos y colaboración open-source",
+    "chooseProvider": "Elige tu proveedor",
+    "chooseProviderHint": "Usa la cuenta que prefieras para entrar en segundos.",
+    "back": "Volver",
+    "discord": "Continuar con Discord",
+    "google": "Continuar con Google",
+    "microsoft": "Continuar con Microsoft Entra ID",
+    "footer": "Solo usamos tu autenticación para identificar sesión. No compartimos archivos con terceros."
   }
 }

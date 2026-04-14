@@ -9,6 +9,7 @@
     "dev:web": "npm run dev --workspace @filesentinel/web",
     "dev:api": "npm run dev --workspace @filesentinel/api",
     "dev": "concurrently -n web,api -c green,blue \"npm run dev:web\" \"npm run dev:api\"",
+    "clean:web": "rm -rf apps/web/.next",
     "build:web": "npm run build --workspace @filesentinel/web",
     "lint:web": "npm run lint --workspace @filesentinel/web",
     "test:api": "npm run test --workspace @filesentinel/api"

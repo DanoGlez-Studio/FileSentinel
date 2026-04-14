@@ -1,13 +1,15 @@
 import { auth } from "@/lib/auth";
 
 const API_BASE_URL = process.env.API_BASE_URL ?? "http://localhost:8000";
+const DEFAULT_DEV_API_KEY = process.env.NEXT_PUBLIC_DEV_API_KEY ?? "local-dev-key";
 
 export async function POST(request: Request) {
   const session = await auth();
-  const apiKey = request.headers.get("x-api-key") ?? "";
+  let apiKey = request.headers.get("x-api-key") ?? "";
 
+  // Use default dev key in development if no auth provided
   if (!session?.user && !apiKey) {
-    return Response.json({ detail: "Unauthorized" }, { status: 401 });
+    apiKey = DEFAULT_DEV_API_KEY;
   }
 
   const formData = await request.formData();

@@ -6,14 +6,40 @@
     "title": "Detect file types with FileSentinel",
     "subtitle": "Upload a file and get AI-powered classification in milliseconds.",
     "uploadLabel": "Choose a file",
+    "dropHint": "Click or drag your file here",
+    "dropActive": "Drop the file to analyze it",
+    "selectedFile": "Selected file",
     "submit": "Analyze file",
     "analyzing": "Analyzing...",
     "noResult": "No results yet.",
     "resultTitle": "Result",
-    "error": "Could not analyze file"
+    "error": "Could not analyze file",
+    "detectedType": "Detected type",
+    "mimeType": "MIME",
+    "confidence": "Confidence",
+    "confidenceLevel": "Confidence level",
+    "elapsedTime": "Elapsed time",
+    "score": "Score",
+    "warnings": "Warnings",
+    "technicalDetails": "Technical details"
   },
   "auth": {
     "signIn": "Sign in",
     "signOut": "Sign out"
+  },
+  "signInPage": {
+    "badge": "Secure access",
+    "title": "Sign in to FileSentinel",
+    "subtitle": "Access your workspace to save analyses, run repeated checks, and keep your workflow organized.",
+    "benefitOne": "Keep all analyses in one timeline",
+    "benefitTwo": "Faster flow for repeated testing",
+    "benefitThree": "Ready for teams and open-source collaboration",
+    "chooseProvider": "Choose a provider",
+    "chooseProviderHint": "Use your preferred account and continue in seconds.",
+    "back": "Back",
+    "discord": "Continue with Discord",
+    "google": "Continue with Google",
+    "microsoft": "Continue with Microsoft Entra ID",
+    "footer": "We only use your authentication to identify your session. Files are not shared with third parties."
   }
 }

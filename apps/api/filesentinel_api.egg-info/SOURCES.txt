@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+app/__init__.py
+app/main.py
+app/api/__init__.py
+app/api/v1/__init__.py
+app/api/v1/endpoints/__init__.py
+app/api/v1/endpoints/analyze.py
+app/api/v1/endpoints/health.py
+app/core/config.py
+app/core/security.py
+app/services/magika_service.py
+filesentinel_api.egg-info/PKG-INFO
+filesentinel_api.egg-info/SOURCES.txt
+filesentinel_api.egg-info/dependency_links.txt
+filesentinel_api.egg-info/requires.txt
+filesentinel_api.egg-info/top_level.txt

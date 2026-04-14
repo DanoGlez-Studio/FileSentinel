@@ -14,3 +14,8 @@ body {
     #f7faf8;
   color: #0b1f18;
 }
+
+button[aria-label="Open Next.js Dev Tools"],
+nextjs-portal {
+  display: none !important;
+}
