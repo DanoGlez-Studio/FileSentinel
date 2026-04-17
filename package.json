@@ -11,10 +11,11 @@
     "dev": "concurrently -n web,api -c green,blue \"npm run dev:web\" \"npm run dev:api\"",
     "clean:web": "rm -rf apps/web/.next",
     "build:web": "npm run build --workspace @filesentinel/web",
-    "lint": "npm run build:web",
+    "lint": "npm run lint:web",
     "lint:web": "npm run build --workspace @filesentinel/web",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
+    "check:fast": "npx lint-staged",
     "check": "npm run format:check && npm run lint",
     "test:api": "npm run test --workspace @filesentinel/api",
     "prepare": "husky"
