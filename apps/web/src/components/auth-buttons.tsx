@@ -25,7 +25,10 @@ export async function AuthButtons({ locale, labels }: AuthButtonsProps) {
   }
 
   return (
-    <Link className="rounded-full bg-brand-700 px-4 py-2 text-xs font-semibold text-white" href={`/${locale}/sign-in`}>
+    <Link
+      className="rounded-full bg-brand-700 px-4 py-2 text-xs font-semibold text-white"
+      href={`/${locale}/sign-in`}
+    >
       {labels.signIn}
     </Link>
   );

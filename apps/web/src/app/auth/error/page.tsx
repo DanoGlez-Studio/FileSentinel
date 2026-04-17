@@ -23,7 +23,9 @@ export default async function AuthErrorPage({ searchParams }: AuthErrorPageProps
         <p className="inline-flex rounded-full border border-brand-300 bg-brand-50 px-3 py-1 text-xs font-semibold text-brand-800">
           Error de autenticacion
         </p>
-        <h1 className="mt-4 text-3xl font-bold text-brand-900 md:text-4xl">No pudimos iniciar sesion</h1>
+        <h1 className="mt-4 text-3xl font-bold text-brand-900 md:text-4xl">
+          No pudimos iniciar sesion
+        </h1>
         <p className="mt-3 text-sm leading-relaxed text-brand-800 md:text-base">{message}</p>
 
         <div className="mt-6 rounded-xl border border-brand-200 bg-brand-50/60 p-4 text-xs text-brand-800">

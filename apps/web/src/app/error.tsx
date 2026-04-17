@@ -16,9 +16,7 @@ export default function ErrorPage({ error, reset }: ErrorPageProps) {
         <p className="mt-3 text-sm leading-relaxed text-brand-800 md:text-base">
           Ocurrio un problema interno. Puedes reintentar la accion o recargar la pagina.
         </p>
-        {error?.digest ? (
-          <p className="mt-3 text-xs text-brand-700">Ref: {error.digest}</p>
-        ) : null}
+        {error?.digest ? <p className="mt-3 text-xs text-brand-700">Ref: {error.digest}</p> : null}
 
         <button
           className="mt-6 rounded-lg bg-brand-700 px-4 py-2 text-sm font-semibold text-white transition hover:bg-brand-800"

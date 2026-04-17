@@ -14,11 +14,9 @@ const fileLocales = fs.existsSync(messagesDir)
   : [];
 
 const locales = Array.from(new Set([...fallbackLocales, ...fileLocales]));
-const defaultLocale = locales.includes("es") ? "es" : locales[0] ?? "en";
+const defaultLocale = locales.includes("es") ? "es" : (locales[0] ?? "en");
 
-const labels = Object.fromEntries(
-  locales.map((locale) => [locale, locale.toUpperCase()])
-);
+const labels = Object.fromEntries(locales.map((locale) => [locale, locale.toUpperCase()]));
 
 const fileContent = `export const locales = ${JSON.stringify(locales)} as const;\nexport type AppLocale = (typeof locales)[number];\n\nexport const defaultLocale: AppLocale = ${JSON.stringify(defaultLocale)};\n\nexport const localeLabels: Record<AppLocale, string> = ${JSON.stringify(labels, null, 2)};\n`;
 

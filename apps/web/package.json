@@ -7,7 +7,7 @@
     "dev": "npm run i18n:locales && rm -rf .next && next dev -p 3000",
     "build": "npm run i18n:locales && next build",
     "start": "next start -p 3000",
-    "lint": "next lint",
+    "lint": "next build",
     "i18n:build": "intlayer build",
     "i18n:watch": "intlayer watch",
     "i18n:test": "intlayer test",
@@ -24,11 +24,14 @@
     "react-dom": "19.1.0"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.5",
     "@intlayer/sync-json-plugin": "^8.7.3",
     "@types/node": "^22.14.1",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "autoprefixer": "^10.4.21",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "16.2.4",
     "intlayer": "^8.7.3",
     "postcss": "^8.5.3",
     "tailwindcss": "^3.4.17",

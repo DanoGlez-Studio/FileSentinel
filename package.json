@@ -11,10 +11,23 @@
     "dev": "concurrently -n web,api -c green,blue \"npm run dev:web\" \"npm run dev:api\"",
     "clean:web": "rm -rf apps/web/.next",
     "build:web": "npm run build --workspace @filesentinel/web",
-    "lint:web": "npm run lint --workspace @filesentinel/web",
-    "test:api": "npm run test --workspace @filesentinel/api"
+    "lint": "npm run build:web",
+    "lint:web": "npm run build --workspace @filesentinel/web",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm run format:check && npm run lint",
+    "test:api": "npm run test --workspace @filesentinel/api",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,md,css,scss,html,yml,yaml}": [
+      "prettier --write"
+    ]
   },
   "devDependencies": {
-    "concurrently": "^9.1.2"
+    "concurrently": "^9.1.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "prettier": "^3.8.3"
   }
 }

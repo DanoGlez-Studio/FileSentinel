@@ -17,7 +17,9 @@ const envLocales = (process.env.INTLAYER_LOCALES ?? "")
   .map((locale) => locale.trim())
   .filter(Boolean);
 
-const configuredLocales = Array.from(new Set([Locales.SPANISH, ...fileLocales, ...envLocales])) as Locale[];
+const configuredLocales = Array.from(
+  new Set([Locales.SPANISH, ...fileLocales, ...envLocales])
+) as Locale[];
 const configuredDefaultLocale = configuredLocales.includes(Locales.SPANISH)
   ? Locales.SPANISH
   : (configuredLocales[0] ?? Locales.SPANISH);

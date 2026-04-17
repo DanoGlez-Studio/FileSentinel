@@ -108,8 +108,14 @@ export function UploadCard({ labels }: UploadCardProps) {
           role="button"
           tabIndex={0}
         >
-          <p className="text-sm font-medium text-brand-900">{isDragging ? labels.dropActive : labels.dropHint}</p>
-          {file ? <p className="mt-2 text-xs text-brand-700">{labels.selectedFile}: {file.name}</p> : null}
+          <p className="text-sm font-medium text-brand-900">
+            {isDragging ? labels.dropActive : labels.dropHint}
+          </p>
+          {file ? (
+            <p className="mt-2 text-xs text-brand-700">
+              {labels.selectedFile}: {file.name}
+            </p>
+          ) : null}
           <input
             className="hidden"
             id="file-input"
@@ -130,12 +136,15 @@ export function UploadCard({ labels }: UploadCardProps) {
 
       <div className="mt-6 rounded-lg border border-brand-100 bg-brand-50 p-4">
         <h2 className="text-sm font-semibold text-brand-900">{labels.resultTitle}</h2>
-        {!result && !error ? <p className="mt-2 text-sm text-brand-700">{labels.noResult}</p> : null}
+        {!result && !error ? (
+          <p className="mt-2 text-sm text-brand-700">{labels.noResult}</p>
+        ) : null}
         {error ? <p className="mt-2 text-sm text-red-700">{error}</p> : null}
         {result ? (
           <div className="mt-3 space-y-2 text-sm text-brand-900">
             <p>
-              <span className="font-semibold">{labels.detectedType}:</span> {result.magika_label} ({result.description})
+              <span className="font-semibold">{labels.detectedType}:</span> {result.magika_label} (
+              {result.description})
             </p>
             <p>
               <span className="font-semibold">{labels.mimeType}:</span> {result.mime_type}
@@ -144,7 +153,8 @@ export function UploadCard({ labels }: UploadCardProps) {
               <span className="font-semibold">{labels.confidence}:</span> {scorePercentage}%
             </p>
             <p>
-              <span className="font-semibold">{labels.confidenceLevel}:</span> {result.confidence_level}
+              <span className="font-semibold">{labels.confidenceLevel}:</span>{" "}
+              {result.confidence_level}
             </p>
             <p>
               <span className="font-semibold">{labels.elapsedTime}:</span> {result.elapsed_ms} ms
@@ -154,12 +164,17 @@ export function UploadCard({ labels }: UploadCardProps) {
             </p>
             {result.warnings.length > 0 ? (
               <p>
-                <span className="font-semibold">{labels.warnings}:</span> {result.warnings.join(", ")}
+                <span className="font-semibold">{labels.warnings}:</span>{" "}
+                {result.warnings.join(", ")}
               </p>
             ) : null}
             <details className="rounded-md border border-brand-200 bg-white p-2">
-              <summary className="cursor-pointer text-xs font-semibold text-brand-800">{labels.technicalDetails}</summary>
-              <pre className="mt-2 overflow-x-auto text-xs text-brand-900">{JSON.stringify(result, null, 2)}</pre>
+              <summary className="cursor-pointer text-xs font-semibold text-brand-800">
+                {labels.technicalDetails}
+              </summary>
+              <pre className="mt-2 overflow-x-auto text-xs text-brand-900">
+                {JSON.stringify(result, null, 2)}
+              </pre>
             </details>
           </div>
         ) : null}

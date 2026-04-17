@@ -18,7 +18,10 @@ export default async function HomePage({ params }: HomePageProps) {
     <main className="mx-auto flex min-h-screen w-full max-w-4xl flex-col items-center justify-center gap-8 p-6 md:p-10">
       <header className="flex w-full max-w-3xl items-center justify-between gap-3">
         <LocaleSwitcher currentLocale={locale} />
-        <AuthButtons locale={locale} labels={{ signIn: t("auth.signIn"), signOut: t("auth.signOut") }} />
+        <AuthButtons
+          locale={locale}
+          labels={{ signIn: t("auth.signIn"), signOut: t("auth.signOut") }}
+        />
       </header>
 
       <section className="w-full max-w-2xl text-center">
