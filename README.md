@@ -2,6 +2,20 @@
 
 Open-source monorepo for a simple and scalable file intelligence platform powered by Magika.
 
+## Demo
+
+### Main
+
+![FileSentinel Main Demo](img/Main.png)
+
+### Scan-1
+
+![FileSentinel Scan-1 Demo](img/Scan-1.png)
+
+### Scan-2
+
+![FileSentinel Scan-2 Demo](img/Scan-2.png)
+
 ## Stack
 
 - `apps/web`: Next.js + Tailwind CSS + next-intl + Auth.js
