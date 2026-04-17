@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "FileSentinel مفتوح المصدر"
+  },
+  "home": {
+    "title": "اكتشف أنواع الملفات باستخدام FileSentinel",
+    "subtitle": "ارفع ملفا واحصل على تصنيف مدعوم بالذكاء الاصطناعي خلال أجزاء من الثانية.",
+    "uploadLabel": "اختر ملفا",
+    "dropHint": "انقر هنا أو اسحب ملفك إلى هذه المنطقة",
+    "dropActive": "أفلت الملف لبدء التحليل",
+    "selectedFile": "الملف المحدد",
+    "submit": "حلل الملف",
+    "analyzing": "جاري التحليل...",
+    "noResult": "لا توجد نتائج بعد.",
+    "resultTitle": "النتيجة",
+    "error": "تعذر تحليل الملف",
+    "detectedType": "النوع المكتشف",
+    "mimeType": "MIME",
+    "confidence": "الثقة",
+    "confidenceLevel": "مستوى الثقة",
+    "elapsedTime": "الوقت",
+    "score": "الدرجة",
+    "warnings": "تحذيرات",
+    "technicalDetails": "تفاصيل تقنية"
+  },
+  "auth": {
+    "signIn": "تسجيل الدخول",
+    "signOut": "تسجيل الخروج"
+  },
+  "signInPage": {
+    "badge": "وصول آمن",
+    "title": "سجل الدخول إلى FileSentinel",
+    "subtitle": "ادخل إلى مساحة العمل لحفظ التحليلات وإعادة الاختبارات وتنظيم سير العمل.",
+    "benefitOne": "كل التحليلات في مخطط زمني واحد",
+    "benefitTwo": "تدفق أسرع للاختبارات المتكررة",
+    "benefitThree": "جاهز للفرق والتعاون مفتوح المصدر",
+    "chooseProvider": "اختر مزودا",
+    "chooseProviderHint": "استخدم حسابك المفضل وتابع خلال ثوان.",
+    "back": "رجوع",
+    "discord": "المتابعة باستخدام Discord",
+    "google": "المتابعة باستخدام Google",
+    "microsoft": "المتابعة باستخدام Microsoft Entra ID",
+    "footer": "نستخدم المصادقة فقط لتحديد الجلسة. لا تتم مشاركة الملفات مع أي طرف ثالث."
+  }
+}

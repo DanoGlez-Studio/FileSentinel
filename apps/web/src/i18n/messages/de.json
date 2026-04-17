@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "FileSentinel Open-Source"
+  },
+  "home": {
+    "title": "Dateitypen mit FileSentinel erkennen",
+    "subtitle": "Lade eine Datei hoch und erhalte in Millisekunden eine KI-Klassifizierung.",
+    "uploadLabel": "Datei auswählen",
+    "dropHint": "Klicke hier oder ziehe deine Datei hinein",
+    "dropActive": "Datei zum Analysieren ablegen",
+    "selectedFile": "Ausgewählte Datei",
+    "submit": "Datei analysieren",
+    "analyzing": "Analysiere...",
+    "noResult": "Noch keine Ergebnisse.",
+    "resultTitle": "Ergebnis",
+    "error": "Datei konnte nicht analysiert werden",
+    "detectedType": "Erkannter Typ",
+    "mimeType": "MIME",
+    "confidence": "Vertrauen",
+    "confidenceLevel": "Vertrauensniveau",
+    "elapsedTime": "Zeit",
+    "score": "Punktzahl",
+    "warnings": "Warnungen",
+    "technicalDetails": "Technische Details"
+  },
+  "auth": {
+    "signIn": "Anmelden",
+    "signOut": "Abmelden"
+  },
+  "signInPage": {
+    "badge": "Sicherer Zugriff",
+    "title": "Bei FileSentinel anmelden",
+    "subtitle": "Melde dich an, um Analysen zu speichern, Tests erneut auszuführen und deinen Workflow zu organisieren.",
+    "benefitOne": "Alle Analysen in einer Zeitleiste",
+    "benefitTwo": "Schnellerer Ablauf für wiederholte Tests",
+    "benefitThree": "Bereit für Teams und Open-Source-Zusammenarbeit",
+    "chooseProvider": "Anbieter wählen",
+    "chooseProviderHint": "Nutze dein bevorzugtes Konto und mache in Sekunden weiter.",
+    "back": "Zurück",
+    "discord": "Mit Discord fortfahren",
+    "google": "Mit Google fortfahren",
+    "microsoft": "Mit Microsoft Entra ID fortfahren",
+    "footer": "Wir verwenden die Authentifizierung nur zur Sitzungsidentifikation. Dateien werden nicht mit Dritten geteilt."
+  }
+}

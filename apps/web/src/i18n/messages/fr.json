@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "FileSentinel Open-Source"
+  },
+  "home": {
+    "title": "Detectez les types de fichiers avec FileSentinel",
+    "subtitle": "Importez un fichier et obtenez une classification IA en quelques millisecondes.",
+    "uploadLabel": "Choisir un fichier",
+    "dropHint": "Cliquez ou glissez votre fichier ici",
+    "dropActive": "Déposez le fichier pour l'analyser",
+    "selectedFile": "Fichier sélectionné",
+    "submit": "Analyser le fichier",
+    "analyzing": "Analyse en cours...",
+    "noResult": "Aucun résultat pour le moment.",
+    "resultTitle": "Résultat",
+    "error": "Impossible d'analyser le fichier",
+    "detectedType": "Type détecté",
+    "mimeType": "MIME",
+    "confidence": "Confiance",
+    "confidenceLevel": "Niveau de confiance",
+    "elapsedTime": "Temps",
+    "score": "Score",
+    "warnings": "Avertissements",
+    "technicalDetails": "Détails techniques"
+  },
+  "auth": {
+    "signIn": "Se connecter",
+    "signOut": "Se déconnecter"
+  },
+  "signInPage": {
+    "badge": "Accès sécurisé",
+    "title": "Connectez-vous à FileSentinel",
+    "subtitle": "Accédez à votre espace pour enregistrer vos analyses, relancer des tests et organiser votre workflow.",
+    "benefitOne": "Toutes les analyses dans une seule chronologie",
+    "benefitTwo": "Flux plus rapide pour les tests répétitifs",
+    "benefitThree": "Prêt pour les équipes et la collaboration open-source",
+    "chooseProvider": "Choisissez un fournisseur",
+    "chooseProviderHint": "Utilisez le compte de votre choix et continuez en quelques secondes.",
+    "back": "Retour",
+    "discord": "Continuer avec Discord",
+    "google": "Continuer avec Google",
+    "microsoft": "Continuer avec Microsoft Entra ID",
+    "footer": "Nous utilisons uniquement votre authentification pour identifier la session. Les fichiers ne sont pas partagés avec des tiers."
+  }
+}

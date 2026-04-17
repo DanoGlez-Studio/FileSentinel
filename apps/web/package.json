@@ -3,23 +3,33 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "rm -rf .next && next dev -p 3000",
-    "build": "next build",
+    "i18n:locales": "node ./scripts/generate-locales.mjs",
+    "dev": "npm run i18n:locales && rm -rf .next && next dev -p 3000",
+    "build": "npm run i18n:locales && next build",
     "start": "next start -p 3000",
-    "lint": "next lint"
+    "lint": "next lint",
+    "i18n:build": "intlayer build",
+    "i18n:watch": "intlayer watch",
+    "i18n:test": "intlayer test",
+    "i18n:fill": "INTLAYER_LOCALES=\"es ${TARGET_LOCALES:-en fr de zh hi pl ar}\" intlayer fill --source-locale ${SOURCE_LOCALE:-es} --output-locales ${TARGET_LOCALES:-en fr de zh hi pl ar} --provider gemini --model ${INTLAYER_AI_MODEL:-gemini-2.0-flash} --env-file .env.local && npm run i18n:locales",
+    "i18n:fill:review": "INTLAYER_LOCALES=\"es ${TARGET_LOCALES:-en fr de zh hi pl ar}\" intlayer fill --source-locale ${SOURCE_LOCALE:-es} --output-locales ${TARGET_LOCALES:-en fr de zh hi pl ar} --provider gemini --model ${INTLAYER_AI_MODEL:-gemini-2.0-flash} --mode review --env-file .env.local && npm run i18n:locales",
+    "i18n:fill:ollama": "INTLAYER_LOCALES=\"es ${TARGET_LOCALES:-en fr de zh hi pl ar}\" intlayer fill --source-locale ${SOURCE_LOCALE:-es} --output-locales ${TARGET_LOCALES:-en fr de zh hi pl ar} --provider ollama --model llama3.1 --env-file .env.local && npm run i18n:locales"
   },
   "dependencies": {
     "next": "^15.5.0",
     "next-auth": "^5.0.0-beta.25",
     "next-intl": "^4.1.0",
+    "next-intlayer": "^8.7.3",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },
   "devDependencies": {
+    "@intlayer/sync-json-plugin": "^8.7.3",
     "@types/node": "^22.14.1",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "autoprefixer": "^10.4.21",
+    "intlayer": "^8.7.3",
     "postcss": "^8.5.3",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.8.3"

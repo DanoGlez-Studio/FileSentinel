@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "FileSentinel 开源版"
+  },
+  "home": {
+    "title": "使用 FileSentinel 检测文件类型",
+    "subtitle": "上传文件，几毫秒内获得 AI 分类结果。",
+    "uploadLabel": "选择文件",
+    "dropHint": "点击或将文件拖拽到此处",
+    "dropActive": "释放文件以开始分析",
+    "selectedFile": "已选择文件",
+    "submit": "分析文件",
+    "analyzing": "分析中...",
+    "noResult": "暂无结果。",
+    "resultTitle": "结果",
+    "error": "无法分析该文件",
+    "detectedType": "检测到的类型",
+    "mimeType": "MIME",
+    "confidence": "置信度",
+    "confidenceLevel": "置信等级",
+    "elapsedTime": "耗时",
+    "score": "评分",
+    "warnings": "警告",
+    "technicalDetails": "技术详情"
+  },
+  "auth": {
+    "signIn": "登录",
+    "signOut": "退出登录"
+  },
+  "signInPage": {
+    "badge": "安全访问",
+    "title": "登录 FileSentinel",
+    "subtitle": "登录后可保存分析记录、重复执行检测并有序管理你的工作流。",
+    "benefitOne": "在同一时间线查看所有分析",
+    "benefitTwo": "重复测试流程更高效",
+    "benefitThree": "已为团队与开源协作做好准备",
+    "chooseProvider": "选择提供商",
+    "chooseProviderHint": "使用你偏好的账号，几秒即可继续。",
+    "back": "返回",
+    "discord": "使用 Discord 继续",
+    "google": "使用 Google 继续",
+    "microsoft": "使用 Microsoft Entra ID 继续",
+    "footer": "我们仅使用你的身份验证来识别会话。文件不会与第三方共享。"
+  }
+}
